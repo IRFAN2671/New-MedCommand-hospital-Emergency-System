@@ -1,0 +1,66 @@
+{
+  "best_model": "random_forest",
+  "metrics": {
+    "random_forest": {
+      "model": "Random Forest",
+      "rmse": 3.524,
+      "mae": 1.924,
+      "r2": 0.9421,
+      "accuracy_pct": 94.21
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "rmse": 3.579,
+      "mae": 1.969,
+      "r2": 0.9403,
+      "accuracy_pct": 94.03
+    },
+    "decision_tree": {
+      "model": "Decision Tree",
+      "rmse": 3.76,
+      "mae": 2.012,
+      "r2": 0.9341,
+      "accuracy_pct": 93.41
+    }
+  },
+  "feature_importance": {
+    "random_forest": {
+      "queue_length": 0.7205089961217371,
+      "priority": 0.07975479714278809,
+      "num_doctors": 0.0012068611370526254,
+      "arrival_rate": 0.011942857608364296,
+      "dept_load": 0.11794547656035334,
+      "time_of_day": 0.003883411315619281,
+      "free_doctors": 0.06475760011408524
+    },
+    "xgboost": {
+      "queue_length": 0.30563387274742126,
+      "priority": 0.07640615105628967,
+      "num_doctors": 0.007054041605442762,
+      "arrival_rate": 0.0036932467482984066,
+      "dept_load": 0.6037264466285706,
+      "time_of_day": 0.003170218551531434,
+      "free_doctors": 0.00031599393696524203
+    },
+    "decision_tree": {
+      "queue_length": 0.7740340662330241,
+      "priority": 0.027509873412467828,
+      "num_doctors": 0.0025573282307647734,
+      "arrival_rate": 0.007517790539949124,
+      "dept_load": 0.05277152711461456,
+      "time_of_day": 0.0025741588748536227,
+      "free_doctors": 0.13303525559432583
+    }
+  },
+  "feature_cols": [
+    "queue_length",
+    "priority",
+    "num_doctors",
+    "arrival_rate",
+    "dept_load",
+    "time_of_day",
+    "free_doctors"
+  ],
+  "training_samples": 7372,
+  "test_samples": 1844
+}
